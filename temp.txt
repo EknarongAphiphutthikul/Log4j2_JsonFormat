@@ -1,0 +1,27 @@
+//		
+//		LoggerConfig loggerConfigRoot = loggerConfigMap.get("");
+//		LoggerConfig loggerConfigLogDebug = loggerConfigMap.get("LogDebug");
+//		if (!logFileEnable) {
+//			loggerConfigRoot.removeAppender("LogDebug-FILE");
+//			loggerConfigLogDebug.removeAppender("LogDebug-FILE");
+//		}
+//		
+//		if (!logConsoleEnable) {
+//			loggerConfigRoot.removeAppender("ConsoleAppender");
+//			loggerConfigLogDebug.removeAppender("ConsoleAppender");
+//		}
+//		
+//		
+//		if (logFileEnable) {
+//			Appender appenderFileRoot = loggerConfigRoot.getAppenders().get("LogDebug-FILE");
+//			Appender appenderFileDebug = loggerConfigLogDebug.getAppenders().get("LogDebug-FILE");
+//			Layout<? extends Serializable> appenderFileRootLayout = appenderFileRoot.getLayout();
+//		}
+//		if (logConsoleEnable) {
+//			Appender appenderConsoleRoot = loggerConfigRoot.getAppenders().get("ConsoleAppender");
+//			Appender appenderConsoleDebug = loggerConfigLogDebug.getAppenders().get("ConsoleAppender");
+//			Layout<? extends Serializable> appenderConsoleRootLayout = appenderConsoleRoot.getLayout();
+//			System.out.println();
+//		}
+//		
+//		loggerContext.updateLoggers();

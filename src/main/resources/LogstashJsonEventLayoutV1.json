@@ -1,0 +1,37 @@
+{
+	"mdc": {
+		"$resolver": "mdc"
+	},
+	"stackTrace": {
+		"$resolver": "exception",
+		"field": "stackTrace",
+		"stringified": true
+	},
+	"line_number": {
+		"$resolver": "source",
+		"field": "lineNumber"
+	},
+	"class": {
+		"$resolver": "source",
+		"field": "className"
+	},
+	"message": {
+		"$resolver": "message",
+		"stringified": true
+	},
+	"thread_name": {
+		"$resolver": "thread",
+		"field": "name"
+	},
+	"@timestamp": {
+		"$resolver": "timestamp"
+	},
+	"level": {
+		"$resolver": "level",
+		"field": "name"
+	},
+	"logger_name": {
+		"$resolver": "logger",
+		"field": "name"
+	}
+}

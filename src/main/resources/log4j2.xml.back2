@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">
+	<Properties>
+
+	</Properties>
+
+	<Appenders>
+
+		<Console name="ConsoleAppender" target="SYSTEM_OUT">
+			<JsonTemplateLayout eventTemplateUri="classpath:LogstashJsonEventLayoutV1.json">
+				<EventTemplateAdditionalField key="host" value="www.apache.org" />
+				<EventTemplateAdditionalField key="_serviceName" value="${ctx:a}" />
+				<EventTemplateAdditionalField key="_containerId" value="6ede3f0ca7d9" />
+			</JsonTemplateLayout>
+		</Console>
+	</Appenders>
+
+
+	<Loggers>
+		<Root level="warn">
+			<AppenderRef ref="ConsoleAppender" />
+		</Root>
+		<Logger name="LogDebug" level="info" additivity="false">
+			<AppenderRef ref="ConsoleAppender" />
+		</Logger>
+	</Loggers>
+</Configuration>
